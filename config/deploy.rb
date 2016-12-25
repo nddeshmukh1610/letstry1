@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.7.0'
+lock '3.7.1'
 
 set :application, 'Ask4Referral2'
 set :repo_url, 'https://github.com/nddeshmukh1610/letstry1.git'
