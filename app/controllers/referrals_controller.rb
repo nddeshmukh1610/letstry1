@@ -1,5 +1,5 @@
 class ReferralsController < ApplicationController
-
+	rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
 
 	
 	def new 
@@ -33,9 +33,16 @@ class ReferralsController < ApplicationController
 		end
 	end
 	
-
+	 def show
+		@referral = Referral.find(params[:id])
+	end
 	
   private
+
+	def record_not_found
+		redirect_to root_path
+	end
+	
 
     def referral_params
       params.require(:referral).permit(:fname, :lname, :company, :comurl, :designation, :currsalary, :expsalary, :exp, :location_id, :mode_id, :jtype_id, :nperiod, :gender_id, :contactemail, :contactno, :resume, :attachment, :jobid, :attachment_cache)

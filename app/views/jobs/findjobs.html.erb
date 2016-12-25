@@ -54,7 +54,7 @@
 						<% @jobs.each do |job| %>
 							<% if job.japproval.name == "Approved" %>
 								<% @keyword_key = params['keyword'] %>								
-								<% if job.description.include? @keyword_key %>
+								<% if job.description =~ (/#{@keyword_key}/i) %>
 									<% @localminexp = job.minexp %>
 									<% @localmaxexp = job.maxexp %>
 									<tr>

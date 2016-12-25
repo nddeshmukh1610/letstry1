@@ -1,5 +1,5 @@
 class JobsController < InheritedResources::Base
-
+	rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
 
    def index
 		@jobs = Job.all.order('created_at DESC')
@@ -35,6 +35,10 @@ class JobsController < InheritedResources::Base
 	
 	
     private
+
+    def record_not_found
+		redirect_to root_path
+    end
 
     def job_params
       params.require(:job).permit(:title, :company, :comurl, :designation, :minsalary, :maxsalary, :minexp, :maxexp, :category_id, :location_id, :mode_id, :jtype_id, :nperiod, :gender_id, :contactperson, :contactemail, :contactno, :description, :japproval_id)
