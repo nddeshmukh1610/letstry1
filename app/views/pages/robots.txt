@@ -1,0 +1,4 @@
+#robots.txt for www.ask4referral.com
+
+User-agent: *
+Disallow: /admin/

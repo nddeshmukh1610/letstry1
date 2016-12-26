@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   
   
   get 'pages/career'
+  get 'pages/robots'
   
   get 'jobs/findjobs'
   
@@ -15,6 +16,8 @@ Rails.application.routes.draw do
   get 'about', :to => 'pages#about'
   
   get 'career', to: 'pages#career'
+  get 'robots', to: 'pages#robots.txt'
+
   get 'findjobs', to: 'jobs#findjobs'
   
   
