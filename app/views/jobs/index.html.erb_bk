@@ -1,12 +1,16 @@
 
 		<div class="main-slider"><!-- start main-headline section -->
 					<div id="home-slider" class="owl-carousel owl-theme" style="display: block; opacity: 1;">
-						<div class="owl-wrapper-outer">							
-							
+						<div class="owl-wrapper-outer">
+
+							<div class="owl-wrapper" style="width: 2170px; left: 0px; display: block;">
+
+								<div class="owl-item" style="width: 1583px;">
 									<div class="item-slide">
-										<%= image_tag("home_handshake.jpg", :alt => "Ask4Referral") %>
+										<%= image_tag("test.jpg", :alt => "Ask4Referral") %>
 									</div>
-						
+								</div>
+							</div>
 						</div>
 					</div>
 		</div><!-- end main-headline section -->
@@ -34,9 +38,8 @@
 
 <div class="recent-job">
     <div class="container">                    
-          
+           <h4>Recent Jobs</h4>
            <div class="row">
-		   <h4><strong>Recent Jobs</strong></h4>
                <table width="100%" class="pure pure-table  pure-table-bordered pure-table-hover" id="results">
                    <thead>
                        <tr>
@@ -75,7 +78,7 @@
 
 <div class="step-to">
 	<div class="container">
-				<h1><strong>If you are looking for Job</strong></h1>
+				<h1>If you are looking for Job</h1>
 				<p>
 					Search job referrals on our portal. Request referral to interested jobs. We will search a referrer on behalf of you.
 				</p>
@@ -134,7 +137,7 @@
 
 <div class="step-to">
 	<div class="container">
-				<h1><strong>If you are Employer: </strong></h1>
+				<h1>If you are Employer: </h1>
 				<p>
 					Send us the job detail on admin@ask4refferal.com or post yourself here, We will post on our portal and give you the matching profiles.
 				</p>
