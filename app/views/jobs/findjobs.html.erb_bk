@@ -31,9 +31,6 @@
 				</form>
 				
 				<% @keyword_key = params['keyword'] %>
-				<% @keyword_empty = "" %>
-				<% @keyword_null = "Null" %>
-				
 				<% @count1 = 0 %> 
 				<% @jobs.each do |job| %>
 							<% if job.japproval.name == "Approved" %>															
@@ -44,12 +41,12 @@
 							<% end %>
 				<% end %>	
 				
-				<% if @keyword_null =~ (/#{@keyword_key}/) %>
+				<% if @keyword_key.include? "Null" %>
 					<br>
 					<h4>Enter search criteria to filter jobs.</h4>
 				<% elsif %>
 							<% if @count1 != 0 %>
-								<% if @keyword_empty =~ (/#{@keyword_key}/i) %>	
+								<% if @keyword_key.empty? or @keyword_key.nil? %>	
 									<h4> Displaying all recent jobs as search criteria is empty. Enter search criteria to filter jobs. </h4>
 									<br>
 								<% elsif %>								

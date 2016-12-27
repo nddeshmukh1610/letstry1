@@ -1,5 +1,10 @@
 class ReferralsController < ApplicationController
 	rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
+	rescue_from ActionView::MissingTemplate, :with => :record_not_found
+
+	def index
+		redirect_to root_path
+	end
 
 	
 	def new 

@@ -1,5 +1,6 @@
 class JobsController < InheritedResources::Base
 	rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
+	rescue_from ActionView::MissingTemplate, :with => :record_not_found
 
    def index
 		@jobs = Job.all.order('created_at DESC')
