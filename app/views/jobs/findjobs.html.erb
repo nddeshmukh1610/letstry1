@@ -6,8 +6,7 @@
 </div><!-- end main page title -->
 					
 
-		
-		
+
 <div class="container">
 		<div class="spacer-1">&nbsp;</div>
 		<div class="row">
@@ -27,52 +26,74 @@
 				
 						<div class="submit-btn" style="margin-top: 25px;">
 							<input type="submit" class="btn btn-green" name="submit" value="Search Jobs">
-						</div> <br><br>
+						</div> <br>
 										
 				</form>
 				
-					
-					<h4>Jobs matching for your search criteria - <script type="text/javascript">
-						document.write(qs("keyword"));
-					</script></h4>
-					<br>
-					
-									
-				           						
-               <table width="100%" class="pure pure-table  pure-table-bordered pure-table-hover" id="results">
-                   <thead>
-                       <tr>
-                           <th width="42%">JOB DESCRIPTION</th>
-                           <th width="18%">COMPANY NAME</th>
-						   <th width="13%">LOCATION</th>
-                           <th width="13%">EXPERIENCE</th>                                                
-                           <th width="18%">POSTED</th>
-                           <th width="18%">Ask4Refferal</th>
-                    </tr>
-                   </thead>
-                   <tbody>
-						<% @jobs.each do |job| %>
-							<% if job.japproval.name == "Approved" %>
-								<% @keyword_key = params['keyword'] %>								
-								<% if job.description =~ (/#{@keyword_key}/i) %>
-									<% @localminexp = job.minexp %>
-									<% @localmaxexp = job.maxexp %>
-									<tr>
-										<td><%= link_to job.title, job %></td>
-										<td><%= job.company %></td>			  
-										<td><%= job.location.name %></td>
-										<td><%= "#{@localminexp} - #{@localmaxexp} Y" %></td>														
-										<td><%= job.created_at.strftime("%d-%b-%Y") %></td>
-										<td><%= link_to "Ask4Refferal", new_referral_path(:jobdesignation => job.designation) %></td>
-									</tr>
-								
-								    
-									
+				<% @keyword_key = params['keyword'] %>
+				<% @count1 = 0 %> 
+				<% @jobs.each do |job| %>
+							<% if job.japproval.name == "Approved" %>															
+								<% if ((job.description =~ (/#{@keyword_key}/i)) or (job.title =~ (/#{@keyword_key}/i)) or (job.location.name =~ (/#{@keyword_key}/i)) or (job.category.name =~ (/#{@keyword_key}/i)) or (job.company =~ (/#{@keyword_key}/i)) or (job.designation =~ (/#{@keyword_key}/i)) ) %>
+			   
+									<% @count1 = @count1+1 %>
 								<% end %>
 							<% end %>
-						<% end %>						
-					</tbody>
-               </table>  
+				<% end %>	
+				
+				<% if @keyword_key.include? "Null" %>
+					<br>
+					<h4>Enter search criteria to filter jobs.</h4>
+				<% elsif %>
+							<% if @count1 != 0 %>
+								<% if @keyword_key.empty? or @keyword_key.nil? %>	
+									<h4> Displaying all recent jobs as search criteria is empty. Enter search criteria to filter jobs. </h4>
+									<br>
+								<% elsif %>								
+									<h4>Job results that match your search criteria - <script type="text/javascript">
+										document.write(qs("keyword"));
+										</script></h4>
+										<br>											
+								<% end %>							
+								<table width="100%" class="pure pure-table  pure-table-bordered pure-table-hover" id="results">
+									<thead>
+										<tr>
+											<th width="42%">JOB DESCRIPTION</th>
+											<th width="18%">COMPANY NAME</th>
+											<th width="13%">LOCATION</th>
+											<th width="13%">EXPERIENCE</th>                                                
+											<th width="18%">POSTED</th>
+											<th width="18%">Ask4Refferal</th>
+									</tr>
+									</thead>
+									<tbody>
+										<% @jobs.each do |job| %>							
+											<% if job.japproval.name == "Approved" %>																				
+												<% if ((job.description =~ (/#{@keyword_key}/i)) or (job.title =~ (/#{@keyword_key}/i)) or (job.location.name =~ (/#{@keyword_key}/i)) or (job.category.name =~ (/#{@keyword_key}/i)) or (job.company =~ (/#{@keyword_key}/i)) or (job.designation =~ (/#{@keyword_key}/i)) ) %>
+													<% @localminexp = job.minexp %>
+													<% @localmaxexp = job.maxexp %>
+													<tr>
+														<td><%= link_to job.title, job %></td>
+														<td><%= job.company %></td>			  
+														<td><%= job.location.name %></td>
+														<td><%= "#{@localminexp} - #{@localmaxexp} Y" %></td>														
+														<td><%= job.created_at.strftime("%d-%b-%Y") %></td>
+														<td><%= link_to "Ask4Refferal", new_referral_path(:jobdesignation => job.designation) %></td>
+													</tr>
+												<% end %>
+											<% end %>
+										<% end %>						
+									</tbody>
+								</table>  
+								
+							<% elsif %>
+								<br>
+								<h4>There are no results that match your search criteria- <script type="text/javascript">
+								document.write(qs("keyword"));
+								</script></h4>
+								<h5> Please try adjusting your search keywords. </h5>
+							<% end %>
+				<% end %>
 				<h6 class="general_heading" style="cursor: pointer; cursor: hand; "><div id="pageNavPosition"></div></h6>	
 			<br>
 			</div>                                                    
@@ -126,3 +147,4 @@
 			</div><!-- end content -->
 		</div><!-- end page content -->
 		
+
