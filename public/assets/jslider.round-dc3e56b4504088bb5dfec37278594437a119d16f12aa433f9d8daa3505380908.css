@@ -1,0 +1,13 @@
+/* line 2, /home/ubuntu/letstry1/app/assets/stylesheets/jslider.round.scss */
+.jslider_round .jslider-bg i,
+.jslider_round .jslider-pointer {
+  background-image: url(../images/jslider.round.png);
+}
+
+/* line 4, /home/ubuntu/letstry1/app/assets/stylesheets/jslider.round.scss */
+.jslider_round .jslider-pointer {
+  width: 17px;
+  height: 17px;
+  top: -5px;
+  margin-left: -8px;
+}

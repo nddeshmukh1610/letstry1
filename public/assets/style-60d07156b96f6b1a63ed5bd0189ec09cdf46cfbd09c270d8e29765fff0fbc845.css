@@ -1,0 +1,4055 @@
+/*
+Template Name:Job Board
+Description:
+Version:
+Author:
+Template URI:
+Template URI:
+License URI:
+Tags:
+*/
+/*--------------------------------------------------------------------------------*/
+/*	Default Element Styling */
+/*--------------------------------------------------------------------------------*/
+/* line 16, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+html, body {
+  font-family: 'Nunito', myriad pro, tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+}
+
+/* line 21, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+h1 {
+  font-size: 36px;
+}
+
+/* line 24, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+h2 {
+  font-size: 30px;
+}
+
+/* line 27, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+h3 {
+  font-size: 28px;
+}
+
+/* line 31, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+h4 {
+  font-size: 24px;
+}
+
+/* line 34, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+h5 {
+  font-size: 20px;
+}
+
+/* line 37, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+h6 {
+  font-size: 16px;
+}
+
+/* line 40, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', tahoma, sans-serif;
+  font-weight: 400;
+  color: #565656;
+}
+
+/* line 45, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+a {
+  color: #565656;
+}
+
+/* line 48, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+a:hover {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+/* line 52, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+hr {
+  margin: 0;
+}
+
+/* line 56, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.style-list-1 {
+  list-style-image: url(images/list-1.png);
+  margin: 15px 0;
+  padding: 0 0 0 15px;
+  font-size: 14px;
+  color: #7f7f7f;
+}
+
+/* line 63, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.style-list-2 {
+  list-style-image: url(images/list-2.png);
+  margin: 15px 0;
+  padding: 0 0 0 15px;
+  font-size: 14px;
+  color: #7f7f7f;
+}
+
+/* line 70, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.style-list-3 {
+  list-style-image: url(images/list-3.png);
+  margin: 15px 5px;
+  padding: 0 0 0 15px;
+  font-size: 14px;
+  color: #7f7f7f;
+}
+
+/* line 77, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.style-list-4 {
+  list-style-image: url(images/list-4.png);
+  margin: 15px 5px;
+  padding: 0 0 0 15px;
+  font-size: 14px;
+  color: #7f7f7f;
+}
+
+/* line 84, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.style-list-3 a, .style-list-4 a {
+  color: #7f7f7f;
+}
+
+/* line 87, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.style-list-3 a:hover, .style-list-4 a:hover {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+/* line 91, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.style-list-1 li {
+  margin: 0 0 5px 0;
+}
+
+/* line 94, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.style-list-2 li {
+  margin: 0 0 9px 0;
+}
+
+/* line 97, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.style-list-3 li {
+  margin: 0 0 9px 0;
+}
+
+/* line 100, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.style-list-4 li {
+  margin: 0 0 9px 0;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Body/Main */
+/*--------------------------------------------------------------------------------*/
+/* line 107, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* line 113, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.container {
+  padding: 0;
+}
+
+/* line 117, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#page-content {
+  background: #ffffff;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Header */
+/*--------------------------------------------------------------------------------*/
+/* line 124, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#header {
+  width: 100%;
+  min-height: 100px;
+  background-color: #ffffff;
+}
+
+/* line 131, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.top-line {
+  width: 100%;
+  border-top: 3px solid #8cddcd;
+  height: 0;
+}
+
+/* line 136, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.top {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e8eaeb;
+}
+
+/* line 141, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media-top-right {
+  float: right;
+}
+
+/* line 144, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media-top {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+/* line 150, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media-top-2 {
+  list-style: none;
+  margin: 0 0 0 5px;
+  padding: 0;
+  float: left;
+}
+
+/* line 156, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media-top li, .media-top-2 li {
+  display: inline-block;
+}
+
+/* line 159, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media-top .item {
+  padding: 8px 8px;
+  color: #c0c2c2;
+}
+
+/* line 163, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media-top .item a {
+  color: #c0c2c2;
+}
+
+/* line 166, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media-top .item a:hover {
+  color: #1abc9c;
+}
+
+/* line 169, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media-top-2 .btn-blue, .media-top-2 .btn-green {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px 15px;
+}
+
+/* line 174, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.main-logo {
+  margin: 35px 0;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Navigation */
+/*--------------------------------------------------------------------------------*/
+/* line 181, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.full {
+  padding: 0;
+}
+
+/* line 185, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.main-nav {
+  padding: 0;
+}
+
+/* line 188, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+nav {
+  display: block;
+}
+
+/* line 192, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.menu {
+  display: block;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 25px 0 0 0;
+}
+
+/* line 199, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.menu li {
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+  padding: 0 17px;
+}
+
+/* line 206, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.menu li:first-child {
+  padding-left: 30px;
+}
+
+/* line 210, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.menu li:last-child {
+  padding-right: 0;
+}
+
+/* line 214, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.menu li a {
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  padding: 15px 5px;
+  color: #5b6363;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+/* line 227, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.menu li a:hover, .menu li:hover > a {
+  border-bottom: 1px solid #16a085;
+  color: #16a085;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+/* line 237, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.menu ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  position: absolute;
+  top: 98%;
+  left: 0px;
+  background: #ffffff;
+  border-bottom: 3px solid #dcdcdc;
+  border-top: 1px solid #1abc9c;
+}
+
+/* line 250, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.menu ul li {
+  display: block;
+  float: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 257, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.menu ul li:first-child {
+  padding-left: 0;
+}
+
+/* line 260, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.menu ul li a {
+  font-size: 13px;
+  font-weight: normal;
+  display: block;
+  color: #797979;
+  background: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 270, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.menu ul li a:hover, .menu ul li:hover > a {
+  background: #f0f0f0;
+  border-bottom: none;
+  color: #1abc9c;
+}
+
+/* line 276, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.menu li:hover > ul {
+  display: block;
+}
+
+/* line 279, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.menu ul ul {
+  left: 149px;
+  top: 0px;
+}
+
+/* line 284, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.mobile-menu {
+  display: none;
+  width: 100%;
+  padding: 11px;
+  background: #ffffff;
+  color: #1abc9c;
+  text-transform: uppercase;
+}
+
+/* line 293, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.mobile-menu:hover {
+  color: #565656;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Slider&Headline */
+/*--------------------------------------------------------------------------------*/
+/* line 301, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.main-slider {
+  width: 100%;
+  height: auto;
+  background: #318ecc;
+  /*min-height:558px;
+  /*background:#2980b9 url(images/headline-bg.png) center no-repeat;*/
+}
+
+/* line 308, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.main-slider img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 312, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.slider-nav {
+  height: auto;
+  position: absolute;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: -30px;
+  border-radius: 0 0 10px 0;
+}
+
+/* line 322, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.slider-next {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 32px;
+  padding: 10px 10px 10px 3px;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+/* line 331, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.slider-prev {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 32px;
+  padding: 10px 3px 10px 10px;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+/* line 339, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.slider-next:hover, .slider-prev:hover {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+/* line 345, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.headline {
+  background: rgba(26, 188, 156, 0.7);
+  position: relative;
+  margin-top: -240px;
+  padding: 45px 45px 0 45px;
+  min-height: 240px;
+}
+
+/* line 352, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.align-left {
+  padding-left: 45px;
+}
+
+/* line 356, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.align-left h4 {
+  font-weight: 400;
+  color: #ffffff;
+  text-align: left;
+  font-size: 26px;
+}
+
+/* line 362, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.align-left p {
+  font-weight: 400;
+  color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* line 368, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.align-left .btn-light {
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 8px 15px;
+}
+
+/* line 374, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.align-right {
+  padding-right: 45px;
+}
+
+/* line 378, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.align-right h4 {
+  font-weight: 400;
+  color: #ffffff;
+  text-align: right;
+  font-size: 26px;
+}
+
+/* line 384, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.align-right p {
+  font-weight: 400;
+  color: #ffffff;
+  text-align: right;
+  font-size: 14px;
+}
+
+/* line 390, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.align-right .btn-yellow {
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 8px 15px;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Home-Job Finder */
+/*--------------------------------------------------------------------------------*/
+/* line 399, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-finder {
+  width: 100%;
+  min-height: 485px;
+  background-color: #ecf0f1;
+  margin-top: 2px;
+}
+
+/* line 405, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-finder h3 {
+  font-weight: 700;
+  color: #565656;
+  font-size: 26px;
+  margin: 40px 0;
+}
+
+/* line 411, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-finder .btn-green {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding: 8px 20px;
+}
+
+/* line 417, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.label {
+  font-weight: 400;
+  color: #565656;
+  font-size: 18px;
+  padding: 0;
+}
+
+/* line 423, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.group-1 {
+  padding: 0 8px 0 0;
+}
+
+/* line 426, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.group-2 {
+  padding: 0 0 0 8px;
+}
+
+/* line 429, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.input-job {
+  border: 0;
+  margin: 15px 0;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(187, 192, 194, 0.9);
+  color: #889292;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 35px 0 15px;
+  width: 100%;
+  background-image: url("images/magnifying-glass.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/* line 445, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.input-location {
+  border: 0;
+  margin: 15px 0;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(187, 192, 194, 0.9);
+  color: #889292;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 35px 0 15px;
+  width: 100%;
+  background-image: url("images/pin-blue.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/* line 460, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.value-slider {
+  margin: 20px 0;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Page Content */
+/*--------------------------------------------------------------------------------*/
+/* line 467, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.spacer-1 {
+  width: 100%;
+  height: 50px;
+}
+
+/* line 471, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.spacer-2 {
+  width: 100%;
+  height: 100px;
+}
+
+/* line 475, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.main-page-title {
+  width: 100%;
+  min-height: 104px;
+  border-bottom: 1px solid #f4f6f7;
+  background: #ecf0f1;
+}
+
+/* line 481, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.page-title {
+  padding: 34px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #565656;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	About-page */
+/*--------------------------------------------------------------------------------*/
+/* line 492, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.content-about {
+  padding: 0;
+}
+
+/* line 496, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.content-about p {
+  color: #7f7f7f;
+  font-size: 14px;
+}
+
+/* line 500, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.content-about h4 {
+  margin-top: 7px;
+  margin-bottom: 35px;
+}
+
+/* line 504, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.content-about h5 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* line 508, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.content-about h6 {
+  font-size: 18px;
+  margin: 18px 0 35px 0;
+  padding: 0;
+}
+
+/* line 514, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.content-about-center {
+  width: 100%;
+  background: #fcfcfc;
+  min-height: 655px;
+}
+
+/* line 519, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.centering {
+  text-align: center;
+}
+
+/* line 523, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.big-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin: 90px 0 15px 0;
+}
+
+/* line 530, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.content-about-center h6 {
+  font-size: 18px;
+  margin: 45px 0 25px 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 536, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.content-about-center p {
+  text-align: center;
+}
+
+/* line 540, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.about-post-resume h4, .about-post-resume p, .about-post-job h4, .about-post-job p {
+  text-align: center;
+}
+
+/* line 543, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.about-post-resume h4, .about-post-job h4 {
+  margin: 30px 0 40px 0;
+}
+
+/* line 546, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.about-post-resume .btn-black, .about-post-job .btn-green {
+  margin: 30px 0 10px 0;
+  padding: 15px 25px;
+}
+
+/* line 550, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.about-post-resume .btn-black i {
+  margin: 0 0 0 25px;
+}
+
+/* line 554, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.page-slider-container {
+  padding: 0;
+}
+
+/* line 558, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.page-slider .owl-carousel img {
+  border-radius: 5px;
+}
+
+/* line 561, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.page-slider .owl-page span {
+  background: #ecf0f1 !important;
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  margin: 15px 12px;
+}
+
+/* line 567, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.page-slider .owl-page.active span, .page-slider .clickable .owl-page:hover span {
+  background: #1abc9c !important;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Blog Page */
+/*--------------------------------------------------------------------------------*/
+/* line 574, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#content-blog {
+  padding: 0;
+  font-weight: 300;
+}
+
+/* line 578, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#content-blog hr {
+  margin: 0 0 40px 0;
+}
+
+/* line 581, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.author-post {
+  font-weight: 300;
+  color: #565656;
+  max-width: 190px;
+}
+
+/* line 586, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.author-post a {
+  color: #c9c9c9;
+}
+
+/* line 589, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.author-post a:hover {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+/* line 593, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.author-post img {
+  float: right;
+  margin: 0 0 5px 0;
+  border-radius: 10px;
+  max-width: 100px;
+}
+
+/* line 599, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.author-post p {
+  text-align: right;
+  margin: 4px 0;
+}
+
+/* line 603, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-author {
+  font-size: 12px;
+  color: #c9c9c9;
+  margin: 0 0 15px 0;
+}
+
+/* line 608, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-author i {
+  color: #1abc9c;
+  margin: 0 5px 0 6px;
+}
+
+/* line 612, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-author i:first-child {
+  margin-left: 0;
+}
+
+/* line 615, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-title {
+  color: #565656;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+/* line 622, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.blog-post-content p {
+  font-size: 14px;
+  color: #565656;
+  font-weight: 300;
+  margin: 15px 0;
+}
+
+/* line 628, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.blog-post-content blockquote {
+  font-size: 18px;
+  border-left: 4px solid #1abc9c;
+  padding: 5px 15px;
+  color: #565656;
+}
+
+/* line 634, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.blog-post-content a {
+  color: #565656;
+}
+
+/* line 637, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.blog-post-content a:hover {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+/* line 641, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-post {
+  font-size: 14px;
+  color: #a1a1a1;
+  margin: 10px 0;
+}
+
+/* line 646, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-post i {
+  margin: 0 13px 0 0;
+}
+
+/* line 649, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-post a {
+  color: #a1a1a1;
+}
+
+/* line 652, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-post a:hover {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+/* line 657, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-pagination {
+  padding: 0;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+/* line 664, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-pagination li {
+  display: inline-block;
+  margin: 10px 6px;
+}
+
+/* line 668, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-pagination li .pag-num {
+  padding: 5px 10px;
+  border: 1px solid #1abc9c;
+  border-radius: 5px;
+  background: #1abc9c;
+  color: #ffffff;
+}
+
+/* line 675, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-pagination li .pag-num:hover, .job-pagination li .active {
+  color: #1abc9c;
+  background: #ffffff;
+  text-decoration: none;
+}
+
+/* line 681, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-pagination li .pag-next, .job-pagination li .pag-prev {
+  background: #e3e3e3;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #565656;
+}
+
+/* line 686, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-pagination li .pag-next:hover, .job-pagination li .pag-prev:hover {
+  background: #c7c7c7;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Blog - Page Comment */
+/*--------------------------------------------------------------------------------*/
+/* line 695, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.comments-section {
+  list-style: none;
+}
+
+/* line 698, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.comments-section h5 {
+  font-size: 22px;
+  color: #565656;
+  font-weight: 300;
+}
+
+/* line 703, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.comments-section h5 i {
+  color: #1abc9c;
+  margin: 0 20px 0 0;
+}
+
+/* line 707, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.comments-section form {
+  margin: 25px 0;
+}
+
+/* line 710, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.comments-section .name, .comments-section .email {
+  height: 45px;
+  border: 1px solid #dbdbdb;
+  background: #f1f1f1;
+  box-shadow: none;
+}
+
+/* line 716, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.comments-section .comment-text {
+  border: 1px solid #dbdbdb;
+  background: #f1f1f1;
+  box-shadow: none;
+  min-height: 230px;
+}
+
+/* line 722, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.comments-section .btn-green {
+  margin: 10px 0;
+}
+
+/* line 726, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.commentlist {
+  padding: 0;
+  margin: 30px 0;
+  list-style: none;
+}
+
+/* line 732, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.commentlist > .media {
+  border-bottom: 1px solid #e2e6e6;
+  padding: 10px 0;
+}
+
+/* line 737, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.commentlist > .media img {
+  max-width: 100px;
+  height: auto;
+}
+
+/* line 741, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.commentlist > .media:first-child {
+  border-top: 1px solid #e2e6e6;
+}
+
+/* line 744, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.comment-content {
+  padding-left: 15px;
+}
+
+/* line 747, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media ul {
+  margin: 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 752, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media ul li {
+  border-bottom: 1px solid #e2e6e6;
+  padding: 5px 0;
+  list-style: none;
+}
+
+/* line 757, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media ul li:first-child {
+  border-top: 1px solid #e2e6e6;
+  padding: 15px 0 5px 0;
+}
+
+/* line 762, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media ul li:last-child {
+  border-bottom: none;
+}
+
+/* line 765, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.comment-content p {
+  font-size: 14px;
+  color: #7f7f7f;
+}
+
+/* line 769, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.comment-content p span {
+  color: #1abc9c;
+}
+
+/* line 773, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.reply {
+  margin: 0 0 0 15px;
+}
+
+/* line 776, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.reply a i {
+  margin: 0 5px 0 0;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Sidebar */
+/*--------------------------------------------------------------------------------*/
+/* line 785, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#sidebar {
+  padding: 0;
+}
+
+/* line 788, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.search-form {
+  border: 1px solid #e3e3e3;
+  height: 43px;
+  background: #fafafa url(images/search-icon.png) no-repeat;
+  padding: 0 10px 0 35px;
+  box-shadow: none;
+}
+
+/* line 795, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.sidebar-widget-title {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+/* line 800, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-post-content {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+/* line 803, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-post-widget a {
+  color: #c9c9c9;
+}
+
+/* line 806, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-post-widget a:hover {
+  color: #1abc9c;
+}
+
+/* line 809, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-post-widget p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #828282;
+  line-height: 1.5em;
+}
+
+/* line 816, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-post-widget h6 {
+  margin: 10px 0 15px 0;
+}
+
+/* line 820, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-post-widget img {
+  max-width: 100px;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+/* line 826, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-title {
+  padding: 5px 0 5px 0;
+  width: 100%;
+}
+
+/* line 830, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.tags, .archives {
+  margin-top: 0;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Shortcode Page */
+/*--------------------------------------------------------------------------------*/
+/* line 836, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.shortcodes h1, .shortcodes h2, .shortcodes h3, .shortcodes h4, .shortcodes h5, .shortcodes h6 {
+  font-weight: 300;
+}
+
+/* line 839, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.shortcodes p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/* line 843, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.shortcodes .job-btn {
+  font-weight: 300;
+}
+
+/* line 846, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.dropcap-1:first-child:first-letter {
+  float: left;
+  color: #1abc9c;
+  font-size: 85px;
+  line-height: 50px;
+  padding: 5px 10px;
+  margin: 0 10px 0 0;
+}
+
+/* line 854, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.dropcap-2:first-child:first-letter {
+  float: left;
+  color: #ffffff;
+  font-size: 75px;
+  padding: 11px 15px;
+  margin: 0 10px 0 0;
+  background: #1abc9c;
+  border-radius: 8px;
+}
+
+/* line 864, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.form-dark {
+  height: 50px;
+  border: 1px solid #dbdbdb;
+  background: #f1f1f1;
+  box-shadow: none;
+}
+
+/* line 870, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.form-dark:focus {
+  box-shadow: none;
+  border: 1px solid #c0c0c0;
+}
+
+/* line 875, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-alert {
+  font-weight: 300;
+  padding: 13px 23px;
+  color: #ffffff;
+  border: none;
+}
+
+/* line 881, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-alert button {
+  margin-right: 20px;
+  margin-top: 3px;
+  color: #ffffff !important;
+  opacity: 10;
+}
+
+/* line 887, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.alert-red {
+  background: #ff8888;
+}
+
+/* line 890, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.alert-yellow {
+  background: #ffd988;
+}
+
+/* line 893, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.alert-lightgreen {
+  background: #c5e69a;
+}
+
+/* line 896, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.alert-blue {
+  background: #9ac9e6;
+}
+
+/* line 903, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-accordion .panel {
+  border: 1px solid #d1d1d1;
+  box-shadow: none;
+  margin-bottom: 15px;
+}
+
+/* line 908, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-accordion .panel-heading {
+  background: #d1d1d1;
+  padding: 10px 10px;
+  color: #ffffff;
+}
+
+/* line 914, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-accordion .panel-heading h4 {
+  float: left;
+  padding: 5px 0;
+}
+
+/* line 918, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-accordion .panel-heading a {
+  float: right;
+  padding: 2px 5px;
+  background: #7d7d7d;
+  color: #d1d1d1;
+  border-radius: 5px;
+}
+
+/* line 925, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-accordion .panel-body {
+  font-size: 14px;
+  color: #4a4f4f;
+}
+
+/* line 929, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.blockquote {
+  font-size: 18px;
+  color: #7d7d7d;
+  background: #d1d1d1;
+  border: 0;
+  font-weight: 300;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+/* line 938, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.table-condensed {
+  margin: 30px 0;
+}
+
+/* line 941, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.table-condensed, .table-condensed thead tr th {
+  font-weight: 300;
+  text-align: center;
+}
+
+/* line 945, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.table-condensed thead tr th, .table-condensed tbody tr td {
+  border-right: 1px solid #dbdbdb;
+  border-bottom: none;
+}
+
+/* line 949, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.table-condensed thead tr th:last-child, .table-condensed tbody tr td:last-child {
+  border-right: none;
+}
+
+/* line 953, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.table-bordered thead tr th {
+  border-bottom: none;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* line 958, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.table-bordered tbody tr td {
+  text-align: center;
+  font-weight: 300;
+  background: #f1f1f1;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Register Page */
+/*--------------------------------------------------------------------------------*/
+/* line 967, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.register-title {
+  font-size: 27px;
+  font-weight: 300;
+  margin: 55px 0 65px 0;
+}
+
+/* line 972, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.form-regist-container {
+  max-width: 430px;
+  background: #2980b9;
+  padding: 50px 32px 14px 32px;
+  border-radius: 10px;
+  margin: 0 0 45px 0;
+}
+
+/* line 980, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.register-aksen {
+  height: 10px;
+  border-left: 1px solid #b3e0f3;
+  border-right: 1px solid #b3e0f3;
+  border-bottom: 1px solid #b3e0f3;
+  margin: -1px 0 55px 0;
+}
+
+/* line 988, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.form-regist-container .input-form {
+  padding: 0;
+  height: 20px;
+  border-radius: 0;
+  font-size: 16px;
+  background: #2980b9;
+  border: none;
+  box-shadow: none;
+  color: #b3e0f3;
+  padding: 0 10px;
+}
+
+/* line 999, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.register, .register h5 {
+  font-weight: 300;
+}
+
+/* line 1003, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.input-form::-moz-placeholder {
+  color: #b3e0f3 !important;
+}
+
+/* line 1006, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.input-form::-webkit-input-placeholder {
+  color: #b3e0f3 !important;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Signin Page */
+/*--------------------------------------------------------------------------------*/
+/* line 1014, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.singin-page h5 {
+  font-weight: 700;
+}
+
+/* line 1017, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.singin-page p {
+  font-weight: 400;
+  color: #8e8e8e;
+  font-size: 14px;
+}
+
+/* line 1022, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.login-title {
+  font-size: 27px;
+  font-weight: 700;
+  margin: 55px 0 65px 0;
+}
+
+/* line 1027, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.form-singin-container {
+  max-width: 430px;
+  background: #1abc9c;
+  padding: 50px 32px 14px 32px;
+  border-radius: 10px;
+  margin: 0 0 45px 0;
+}
+
+/* line 1034, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.form-singin-container .input-form {
+  padding: 0;
+  height: 20px;
+  border-radius: 0;
+  font-size: 16px;
+  background: #1abc9c;
+  border: none;
+  box-shadow: none;
+  color: #b3f3e5;
+  padding: 0 10px;
+}
+
+/* line 1045, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.singin-aksen {
+  height: 10px;
+  border-left: 1px solid #b3f3e5;
+  border-right: 1px solid #b3f3e5;
+  border-bottom: 1px solid #b3f3e5;
+  margin: -1px 0 55px 0;
+}
+
+/* line 1054, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.form-singin-container .btn-green {
+  background-color: #b3f3e5;
+  color: #1abc9c;
+  font-family: 'Raleway', myriad pro, tahoma, sans-serif;
+  font-weight: 700;
+}
+
+/* line 1060, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.form-singin-container .input-form::-moz-placeholder {
+  color: #b3f3e5 !important;
+}
+
+/* line 1063, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.form-singin-container .input-form::-webkit-input-placeholder {
+  color: #b3f3e5 !important;
+}
+
+/* line 1066, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.form-singin-container .btn-green:hover {
+  color: #ffffff;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Post Job/Resume Page */
+/*--------------------------------------------------------------------------------*/
+/* line 1073, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-title, .post-resume-page-title {
+  font-size: 28px;
+  color: #565656;
+  padding: 45px 0;
+  float: left;
+}
+
+/* line 1080, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-phone, .post-resume-phone {
+  font-weight: 400;
+  font-size: 24px;
+  color: #777f81;
+  padding: 45px 0;
+  float: right;
+}
+
+/* line 1087, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form, .post-resume-form {
+  font-weight: 300;
+}
+
+/* line 1090, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form label, .post-resume-form label {
+  font-weight: 300;
+  font-size: 18px;
+  color: #4a4f4f;
+  margin: 0 0 10px 0;
+}
+
+/* line 1096, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form label span, .post-resume-form label span {
+  color: #797e7e;
+}
+
+/* line 1099, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form label small, .post-resume-form label small {
+  margin: 0 0 0 25px;
+  font-size: 14px;
+  color: #1abc9c;
+}
+
+/* line 1104, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form .input, .post-resume-form .input {
+  height: 50px;
+  border: 1px solid #dee4e5;
+  box-shadow: none;
+}
+
+/* line 1109, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form .input:focus, .post-job-form .textarea:focus, .post-resume-form .input:focus, .post-resume-form .textarea:focus {
+  box-shadow: none;
+  border: 1px solid #c0c9cb;
+}
+
+/* line 1113, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form h3 {
+  color: #1abc9c;
+  margin: 44px 0 34px 0;
+}
+
+/* line 1118, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form .textarea, .post-resume-form .textarea {
+  height: 146px;
+  border: 1px solid #dee4e5;
+  box-shadow: none;
+}
+
+/* line 1123, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form select, .post-resume-form select {
+  background: #FFF url("images/down-arrow.png") no-repeat right;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  cursor: pointer;
+  height: 50px;
+  border: 1px solid #dee4e5;
+  box-shadow: none;
+  padding: 12px 10px;
+}
+
+/* line 1136, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form select:focus, .post-resume-form select:focus {
+  box-shadow: none;
+  border: 1px solid #c0c9cb;
+}
+
+/* line 1140, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form .upload, .post-resume-form .upload {
+  width: 91px;
+  height: 23px;
+  overflow: hidden;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  background: #fcfcfc url(images/upload.png) left no-repeat;
+}
+
+/* line 1149, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form .upload input, .post-resume-form .upload input {
+  width: 91px !important;
+  height: 23px !important;
+  opacity: 0 !important;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 1156, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form .upload:hover, .post-resume-form .upload:hover {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+}
+
+/* line 1161, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form p, .post-resume-form p {
+  color: #797e7e;
+  font-size: 14px;
+}
+
+/* line 1165, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-resume-form .btn-black {
+  font-weight: 400;
+  margin: 5px 0;
+  padding: 5px 15px;
+}
+
+/* line 1170, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-job-form .btn-green, .post-resume-form .btn-green {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Post Job/Resume Sidebar */
+/*--------------------------------------------------------------------------------*/
+/* line 1178, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-side-wrap, .resume-side-wrap {
+  margin: 0 0 20px 0;
+  background: #f3f5f6;
+  padding: 20px 5px;
+  width: 100%;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/* line 1187, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-side-wrap h4, .resume-side-wrap h4 {
+  text-align: center;
+  color: #565656;
+}
+
+/* line 1191, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-side-wrap p, .resume-side-wrap p {
+  text-align: center;
+  color: #898e8f;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 10px;
+}
+
+/* line 1198, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-side-wrap .btn-green {
+  margin: 30px 0 10px 0;
+  width: 195px;
+  padding: 10px 0;
+}
+
+/* line 1204, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-side-wrap .btn-black {
+  margin: 30px 0 10px 0;
+  width: 300px;
+  padding: 15px 10px;
+}
+
+/* line 1209, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-side-wrap .btn-black i {
+  margin: 0 0 0 40px;
+}
+
+/* line 1212, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-side-wrap .btn-blue {
+  margin: 30px 0 10px 0;
+  width: 300px;
+  padding: 15px 10px;
+}
+
+/* line 1217, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-side-wrap .btn-green.postnow {
+  margin: 30px 0 10px 0;
+  width: 300px;
+  padding: 20px 10px;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Job Detail Page */
+/*--------------------------------------------------------------------------------*/
+/* line 1226, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail-title {
+  font-weight: 700;
+  margin: 45px 0 85px 0;
+  color: #565656;
+}
+
+/* line 1231, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail-logo {
+  float: left;
+  margin: 0 10px 0 0;
+  width: 150px;
+}
+
+/* line 1236, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-job-detail {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 1241, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-job-detail li {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+  color: #565656;
+  padding: 8px 0;
+}
+
+/* line 1247, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-job-detail a {
+  color: #565656;
+  font-family: 'Raleway', myriad pro, tahoma, sans-serif;
+}
+
+/* line 1251, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-job-detail a:hover {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+/* line 1255, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-job-detail li i {
+  margin: 0 10px 0 0;
+  color: #565656;
+}
+
+/* line 1260, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail h6 {
+  font-family: 'Raleway', myriad pro, tahoma, sans-serif;
+  font-size: 18px;
+  color: #565656;
+}
+
+/* line 1267, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail p {
+  font-family: 'nunito', myriad pro, tahoma, sans-serif;
+  font-size: 14px;
+  color: #565656;
+  font-weight: 300;
+}
+
+/* line 1275, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-job-detail {
+  width: 100%;
+  border-bottom: 1px solid #dadedf;
+  border-top: 1px solid #dadedf;
+  padding: 10px 0;
+  margin: 50px 0 50px 0;
+}
+
+/* line 1283, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail-name {
+  border-right: 1px solid #e3e3e3;
+  min-height: 65px;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+/* line 1289, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail-name h6 {
+  font-family: 'Raleway', myriad pro, tahoma, sans-serif;
+}
+
+/* line 1292, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail-desc {
+  border-right: 1px solid #e3e3e3;
+  min-height: 65px;
+  padding-top: 5px;
+  font-family: 'Raleway', myriad pro, tahoma, sans-serif;
+}
+
+/* line 1298, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail-desc h5 {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  color: #565656;
+  font-family: 'Raleway', myriad pro, tahoma, sans-serif;
+}
+
+/* line 1305, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail-desc p {
+  color: #565656;
+  font-size: 14px;
+  padding: 0;
+}
+
+/* line 1310, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail-location {
+  border-right: 1px solid #e3e3e3;
+  min-height: 65px;
+  padding-top: 25px;
+  text-align: center;
+  font-family: 'Raleway', myriad pro, tahoma, sans-serif;
+}
+
+/* line 1317, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail-type {
+  min-height: 65px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+/* line 1322, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail-button {
+  min-height: 65px;
+  padding: 15px 0 0 0;
+  font-family: 'Raleway', myriad pro, tahoma, sans-serif;
+}
+
+/* line 1327, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail-location h6, .job-detail-type h6 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #565656;
+  font-family: 'Raleway', myriad pro, tahoma, sans-serif;
+}
+
+/* line 1334, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail-location h6 i {
+  color: #27a2f8;
+  margin: 0 10px 0 0;
+}
+
+/* line 1339, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-detail-type h6 i {
+  color: #ff9494;
+  margin: 0 10px 0 0;
+}
+
+/* line 1344, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-list-logo, .job-list-desc, .job-list-location, .job-list-type {
+  margin: 5px 0;
+}
+
+/* line 1348, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-apply-job {
+  background: #ff9494;
+  padding: 5px 30px;
+  border: 1px solid #e3e3e3;
+  color: #ffffff;
+}
+
+/* line 1354, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-apply-job:hover {
+  background: #f36767;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Contact */
+/*--------------------------------------------------------------------------------*/
+/* line 1360, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.contact {
+  margin: 77px 0 0px 0;
+}
+
+/* line 1363, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.contact label {
+  font-size: 16px;
+  color: #565656;
+  font-weight: 400;
+}
+
+/* line 1368, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.name, .email, .phone, .website, .subject {
+  height: 50px;
+  border: 1px solid #dbdbdb;
+  background: #f1f1f1;
+  box-shadow: none;
+}
+
+/* line 1374, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.message {
+  max-height: 265px;
+  border: 1px solid #dbdbdb;
+  background: #f1f1f1;
+  box-shadow: none;
+}
+
+/* line 1380, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.contact .btn-green {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 55px;
+  margin: 25px 0;
+}
+
+/* line 1388, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+div.location {
+  width: 100%;
+  height: 519px;
+  font-family: 'Nunito', myriad pro, tahoma, sans-serif;
+  font-weight: 300;
+}
+
+/* line 1395, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+div.map-popup {
+  position: relative;
+}
+
+/* line 1399, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+div.map-popup > div {
+  display: inline-block;
+}
+
+/* line 1402, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+div.map-popup > h6 {
+  font-size: 13px;
+  color: #1abc9c;
+  font-family: 'Nunito', myriad pro, tahoma, sans-serif;
+  margin: 20px 0;
+}
+
+/* line 1410, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#cs {
+  width: 100%;
+  height: auto;
+  background: #e4e1d5;
+  text-align: center;
+}
+
+/* line 1416, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#cs h1 {
+  color: #656565;
+  margin: 10px 0 30px 0;
+}
+
+/* line 1420, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#cs p {
+  color: #565656;
+}
+
+/* line 1423, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.phone-cs {
+  color: #343434 !important;
+  margin: 50px 0 !important;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Home - Recent Job */
+/*--------------------------------------------------------------------------------*/
+/* line 1431, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-job {
+  width: 100%;
+  min-height: 477px;
+  background-color: #ffffff;
+}
+
+/* line 1436, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-job h4 {
+  font-weight: 400;
+  color: #565656;
+  font-size: 24px;
+  margin: 50px 0 40px 0;
+}
+
+/* ---------- Tabs -------------- */
+/* line 1444, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.etabs {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1449, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.tab {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  border-left: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  margin: 0;
+  cursor: pointer;
+  float: left;
+}
+
+/* line 1460, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.tab:nth-child(4) {
+  border-right: 1px solid #e3e3e3;
+}
+
+/* line 1465, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.tab a {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  padding: 5px 24px;
+  outline: none;
+  color: #565656;
+}
+
+/* line 1473, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.tab a:hover, .tab a:focus {
+  text-decoration: none;
+  color: #27a2f8;
+}
+
+/* line 1477, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.tab.active {
+  background: #fff;
+  position: relative;
+  top: 1px;
+}
+
+/* line 1482, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.tab a.active {
+  color: #27a2f8;
+}
+
+/* line 1485, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.tab-container .panel-container {
+  background: #fff;
+  border-top: 1px solid #e3e3e3;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #565656;
+}
+
+/* line 1494, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.panel-container {
+  margin-bottom: 10px;
+}
+
+/* line 1498, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-job-list, .recent-job-list-home {
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 10px 0;
+}
+
+/* line 1504, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-job-list-det {
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 10px 0;
+}
+
+/* line 1510, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-list-logo {
+  border-right: 1px solid #e3e3e3;
+  min-height: 50px;
+  padding: 10px 10px;
+}
+
+/* line 1515, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-list-desc {
+  border-right: 1px solid #e3e3e3;
+  min-height: 50px;
+  padding-top: 5px;
+}
+
+/* line 1520, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-list-desc h6 {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: #565656;
+}
+
+/* line 1526, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-list-desc p {
+  color: #929292;
+  font-size: 13px;
+  padding: 0;
+}
+
+/* line 1531, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-list-location {
+  border-right: 1px solid #e3e3e3;
+  min-height: 50px;
+  padding-top: 15px;
+}
+
+/* line 1536, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-list-type {
+  min-height: 50px;
+  padding-top: 15px;
+}
+
+/* line 1540, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-list-button {
+  min-height: 50px;
+  padding: 10px 0 0 0;
+}
+
+/* line 1544, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-list-location h6, .job-list-type h6 {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: #565656;
+}
+
+/* line 1550, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-list-location h6 i {
+  color: #27a2f8;
+  margin: 0 10px 0 25px;
+}
+
+/* line 1554, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-list-type h6 i {
+  color: #ff9494;
+  margin: 0 10px 0 25px;
+}
+
+/* line 1558, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-list-logo, .job-list-desc, .job-list-location, .job-list-type {
+  margin: 5px 0;
+}
+
+/* line 1562, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-job-list-home .job-list-logo {
+  padding: 15px 10px 15px 0;
+}
+
+/* line 1565, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-job-list-home .job-list-location {
+  padding: 15px 10px 15px 5px;
+}
+
+/* line 1568, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-job-list-home .job-list-type {
+  padding: 15px 10px 15px 0px;
+}
+
+/* line 1571, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-view-job {
+  background: #f7f7f7;
+  padding: 5px 20px;
+  border: 1px solid #e3e3e3;
+}
+
+/* line 1576, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-view-job:hover {
+  background: #ebebeb;
+}
+
+/* ---------- Tabs -------------- */
+/* ---------- carousel -------------- */
+/* line 1583, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#job-opening {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* line 1587, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#job-opening .owl-page {
+  display: none;
+}
+
+/* line 1590, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-opening-top {
+  position: relative;
+  margin: 50px 0 18px 0;
+}
+
+/* line 1596, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-opening {
+  border: 1px solid #e3e3e3;
+  background-color: #FFF;
+  margin-bottom: 35px;
+}
+
+/* line 1602, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-oppening-title {
+  font-size: 24px;
+  float: left;
+  color: #565656;
+}
+
+/* line 1608, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-opening-nav {
+  float: right;
+}
+
+/* line 1612, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.prev, .next {
+  width: 33px;
+  height: 39px;
+  border: 1px solid #e3e3e3;
+  border-radius: 0;
+  float: left;
+}
+
+/* line 1620, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.prev {
+  background: url(images/job-opening-nav-prev.png) no-repeat;
+  margin-left: -1px;
+}
+
+/* line 1625, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.next {
+  background: url(images/job-opening-nav-next.png) no-repeat;
+  margin-left: -1px;
+}
+
+/* line 1630, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-opening-content {
+  font-size: 14px;
+  color: #565656;
+  padding: 20px 30px;
+}
+
+/* line 1635, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-opening-content p {
+  color: #929191;
+}
+
+/* line 1639, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-opening-meta {
+  border-top: 1px solid #e3e3e3;
+  background-color: #f0f0f0;
+  width: 100%;
+  color: #bebebe;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* line 1648, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-block {
+  width: 50%;
+  float: left;
+}
+
+/* line 1652, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-block i {
+  margin: 0 10px 0 0;
+}
+
+/* line 1655, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-job-location {
+  border-right: 1px solid #e3e3e3;
+  padding: 13px 0;
+}
+
+/* line 1659, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.meta-job-type {
+  padding: 13px 0;
+  background: #fafafa;
+}
+
+/* ---------- carousel -------------- */
+/* ---------- Post Resume -------------- */
+/* line 1667, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-resume-container {
+  width: 100%;
+  padding: 25px 45px;
+  background-color: #fafafa;
+  border: 1px solid #e3e3e3;
+  margin: 0 0 20px 0;
+}
+
+/* line 1674, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-resume-title {
+  margin: 5px 0 18px 0;
+  padding: 0;
+  font-size: 24px;
+  color: #565656;
+}
+
+/* line 1680, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-resume-button {
+  color: #565656;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #e3e3e3;
+  background-color: #ffffff;
+  border-radius: 5px !important;
+}
+
+/* line 1689, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-resume-button:hover {
+  color: #565656;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* line 1693, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.post-resume-container i {
+  margin: 0 0 0 10px;
+  font-size: 16px;
+}
+
+/* line 1697, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.icon-upload {
+  background: url(images/icon-upload.png) no-repeat;
+  width: 12px;
+  height: 16px;
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+
+/* line 1704, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.white {
+  background-position: 0 0;
+}
+
+/* line 1707, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.grey {
+  background-position: -12px 0;
+}
+
+/* ---------- Post Resume -------------- */
+/*--------------------------------------------------------------------------------*/
+/*	Job status */
+/*--------------------------------------------------------------------------------*/
+/* line 1715, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-status {
+  width: 100%;
+  min-height: 477px;
+  background-color: #c0d0cd;
+}
+
+/* line 1720, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-status h1 {
+  text-align: center;
+  margin: 63px 0 32px 0;
+  color: #053032;
+}
+
+/* line 1725, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-status p {
+  text-align: center;
+  font-size: 14px;
+  color: #637471;
+}
+
+/* line 1730, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.counter {
+  max-width: 770px;
+  margin: 60px auto 0 auto;
+}
+
+/* line 1734, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.counter-container {
+  width: 25%;
+  height: auto;
+  float: left;
+}
+
+/* line 1739, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.counter-container:last-child {
+  margin-right: 0px !important;
+}
+
+/* line 1743, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.counter-container p {
+  color: #053032;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+/* line 1751, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.counter-value {
+  max-width: 130px;
+  height: 130px;
+  background: #ffffff;
+  font-weight: 700;
+  font-size: 42px;
+  text-align: center;
+  padding: 40px 0;
+  color: #053032;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+/* line 1763, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.line {
+  width: 1px;
+  margin: 0 auto;
+  height: 34px;
+  background: #ffffff;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Home-step */
+/*--------------------------------------------------------------------------------*/
+/* line 1773, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.step-to {
+  width: 100%;
+  background-color: #ffffff;
+  height: auto;
+  padding: 20px 0;
+}
+
+/* line 1779, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.step-to h1 {
+  text-align: center;
+  margin: 72px 0 25px 0;
+  color: #565656;
+}
+
+/* line 1784, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.step-to p {
+  text-align: center;
+  font-size: 14px;
+  color: #959595;
+}
+
+/* line 1790, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#step-image {
+  margin-bottom: 110px;
+  margin-top: 110px;
+  max-width: 100%;
+  height: 1px;
+  background-color: #d9dfe2;
+  position: relative;
+}
+
+/* line 1799, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#step-image > div {
+  display: inline-block;
+  position: absolute;
+}
+
+/* line 1804, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.step-by-container {
+  width: 100%;
+  margin-top: -110px;
+}
+
+/* line 1809, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.step-by {
+  width: 200px;
+  font-size: 14px;
+  color: #565656;
+  text-align: center;
+  float: left;
+  margin-right: 102px;
+}
+
+/* line 1818, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.step-by:first-child {
+  margin-left: 0;
+}
+
+/* line 1821, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.step-by:last-child {
+  margin-right: 0px;
+}
+
+/* line 1824, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.step-by h5 {
+  font-size: 22px;
+  color: #565656;
+}
+
+/* line 1828, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.step-by-inner {
+  max-width: 175px;
+  padding: 20px 25px;
+  margin: 0 auto;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* line 1835, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.step-by-inner-img {
+  max-width: 127px;
+  padding: 18px 25px;
+  border: 1px solid #c0d0cd;
+  border-radius: 5px;
+}
+
+/* line 1841, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.step-spacer {
+  height: 50px;
+  clear: both;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	home-testimony */
+/*--------------------------------------------------------------------------------*/
+/* line 1848, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.testimony {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+/* line 1853, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.testimony h1 {
+  text-align: center;
+  margin: 92px 0 25px 0;
+  color: #565656;
+}
+
+/* line 1858, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.testimony p {
+  text-align: center;
+  font-size: 14px;
+  color: #959595;
+}
+
+/* line 1863, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media-testimony {
+  max-width: 90px;
+  height: auto;
+  margin: 40px auto;
+}
+
+/* line 1868, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media-testimony i {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  color: #ffffff;
+  background: #505050;
+  text-align: center;
+  border-radius: 12px;
+  padding: 6px 0 0 1px;
+  font-size: 13px;
+}
+
+/* line 1880, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media-testimony i.twit:hover {
+  background: #78cdf0;
+}
+
+/* line 1884, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media-testimony i.linkedin:hover {
+  background: #2085c7;
+}
+
+/* line 1887, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media-testimony i.fb:hover {
+  background: #2f62b6;
+}
+
+/*--------------------------------------------------------------------------------*/
+/* home-company list*/
+/*--------------------------------------------------------------------------------*/
+/* line 1893, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#company-post {
+  width: 100%;
+  height: auto;
+  background-color: #e4e1d5;
+}
+
+/* line 1898, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#company-post h1 {
+  text-align: center;
+  margin: 92px 0 25px 0;
+  color: #565656;
+}
+
+/* line 1903, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#company-post p {
+  text-align: center;
+  font-size: 14px;
+  color: #959595;
+}
+
+/* line 1909, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#company-post .owl-page {
+  display: none;
+}
+
+/* line 1913, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.company-post {
+  margin: 80px 0 60px 0;
+}
+
+/* line 1917, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.company {
+  margin: 0 5px;
+}
+
+/* line 1920, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.company img {
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	footer/footer-widget */
+/*--------------------------------------------------------------------------------*/
+/* line 1926, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+#footer {
+  width: 100%;
+  height: auto;
+  background-color: #343434;
+  border-top: 1px solid #414141;
+  padding: 18px 0;
+}
+
+/* line 1934, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-widget {
+  min-height: 265px;
+  min-width: 250px;
+  padding: 0 10px 0 30px;
+}
+
+/* line 1940, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-widget:nth-child(2), .footer-widget:nth-child(3), .footer-widget:nth-child(4) {
+  border-left: 1px solid #414141;
+}
+
+/* line 1944, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.widget-title {
+  color: #ffffff;
+  margin: 35px 0 15px 0;
+  text-align: left;
+}
+
+/* line 1949, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.textwidget {
+  font-size: 16px;
+  color: #868686;
+  margin: 10px 0 15px 0;
+  text-align: left;
+}
+
+/* line 1956, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-widget-nav {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* line 1960, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-widget-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1966, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-widget-nav li {
+  margin-bottom: 22px;
+}
+
+/* line 1969, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-widget-nav li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 1973, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-widget-nav a {
+  color: #868686;
+  transition: padding 0.2s;
+  -webkit-transition: padding 0.2s;
+  -moz-transition: padding 0.2s;
+  -o-transition: padding 0.2s;
+}
+
+/* line 1980, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-widget-nav a:hover {
+  color: #1abc9c;
+  text-decoration: none;
+  padding-left: 5px;
+  transition: padding 0.2s;
+  -webkit-transition: padding 0.2s;
+  -moz-transition: padding 0.2s;
+  -o-transition: padding 0.2s;
+}
+
+/* line 1990, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.input-newstler {
+  border-radius: 0;
+  background: #656565;
+  border: none;
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  color: #868686;
+}
+
+/* line 1999, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-newstler {
+  padding: 7px 30px;
+  background: #1abc9c;
+  font-size: 16px;
+  border-radius: 0;
+  border: none;
+  color: #0a6064;
+  margin: 0;
+}
+
+/* line 2008, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-newstler:hover {
+  background: #00d7ad;
+}
+
+/* line 2011, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.media-footer {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  line-height: 25px;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  margin-top: 28px;
+  background: url(images/icon-media-footer.png) 0 0 no-repeat;
+}
+
+/* line 2021, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-twitt {
+  background-position: 0 0;
+}
+
+/* line 2024, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-twitt:hover {
+  background-position: 0 -26px;
+}
+
+/* line 2027, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-fb {
+  background-position: -30px 0;
+}
+
+/* line 2030, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-fb:hover {
+  background-position: -30px -26px;
+}
+
+/* line 2033, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-linkedin {
+  background-position: -58px 0;
+}
+
+/* line 2036, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-linkedin:hover {
+  background-position: -58px -26px;
+}
+
+/* line 2039, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-yahoo {
+  background-position: -92px 0;
+  width: 27px;
+}
+
+/* line 2043, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-yahoo:hover {
+  background-position: -92px -26px;
+  width: 27px;
+}
+
+/* line 2047, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-blog {
+  background-position: -133px 0;
+}
+
+/* line 2050, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-blog:hover {
+  background-position: -133px -26px;
+}
+
+/* line 2053, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-rss {
+  background-position: -167px 0;
+}
+
+/* line 2056, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-rss:hover {
+  background-position: -167px -26px;
+}
+
+/* line 2060, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-twitt {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* line 2064, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-twitt a {
+  color: #868686;
+}
+
+/* line 2067, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.recent-twitt div {
+  font-size: 10px;
+  color: #868686;
+  margin: 10px 0;
+}
+
+/* line 2073, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-credits {
+  font-size: 14px;
+  color: #868686;
+  padding: 0 15px;
+  margin: 25px 0;
+}
+
+/* line 2079, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-credits a {
+  color: #868686;
+}
+
+/* line 2083, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.footer-credits a:hover {
+  color: #1abc9c;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	button */
+/*--------------------------------------------------------------------------------*/
+/* line 2090, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.job-btn {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: none;
+  margin: 25px 0;
+}
+
+/* line 2097, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-readmore {
+  background: #e3e3e3;
+  padding: 10px 12px;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #696969;
+  margin: 0 0 40px 0;
+}
+
+/* line 2106, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-readmore .glyphicon {
+  color: #1abc9c;
+  margin: 0 0 0 8px;
+}
+
+/* line 2110, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-readmore:hover {
+  background: #d8d8d8;
+}
+
+/* line 2114, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-red {
+  color: #ffffff;
+  background-color: #ff8888;
+  margin: 5px 0;
+  border: none;
+}
+
+/* line 2120, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-red:hover {
+  background-color: #ff6666;
+  color: #ffffff;
+}
+
+/* line 2125, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-grey {
+  background-color: #d1d1d1;
+  margin: 5px 0;
+  color: #565656;
+  border: none;
+}
+
+/* line 2131, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-grey:hover {
+  background-color: #b8b8b8;
+  color: #565656;
+}
+
+/* line 2135, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-darkgreen {
+  background-color: #0a6064;
+  margin: 5px 0;
+  color: #ffffff;
+  border: none;
+}
+
+/* line 2141, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-darkgreen:hover {
+  background-color: #074b4e;
+  color: #ffffff;
+}
+
+/* line 2146, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-black {
+  background-color: #5b6363;
+  margin: 5px 0;
+  color: #ffffff;
+  border: none;
+}
+
+/* line 2152, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-black:hover {
+  background: #393939;
+  color: #ffffff;
+}
+
+/* line 2157, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-blue {
+  background: #2980b9;
+  margin: 5px 0;
+  color: #ffffff;
+  border: none;
+}
+
+/* line 2163, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-blue:hover {
+  background: #0087e0;
+  color: #ffffff;
+}
+
+/* line 2167, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-green {
+  background: #1abc9c;
+  margin: 5px 0;
+  color: #ffffff;
+  border: none;
+}
+
+/* line 2173, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-green:hover {
+  background: #00dbb0;
+  color: #ffffff;
+}
+
+/* line 2177, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-light {
+  color: #4a4f4f;
+  margin: 5px 0;
+  background-color: #ffffff;
+  border: none;
+}
+
+/* line 2183, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-light:hover {
+  background: #eeeeee;
+  color: #4a4f4f;
+}
+
+/* line 2187, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-yellow {
+  color: #4a4f4f;
+  margin: 5px 0;
+  background-color: #fffd2c;
+  border: none;
+}
+
+/* line 2193, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.btn-yellow:hover {
+  background: #f9df00;
+  color: #4a4f4f;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*	Responsive set */
+/*--------------------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+  /* line 2203, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .menu li a {
+    font-size: 12px;
+    padding: 15px 0px;
+  }
+
+  /* line 2207, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .menu ul li a {
+    font-size: 12px;
+  }
+
+  /* line 2211, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .headline {
+    margin-top: 0px;
+    height: auto !important;
+  }
+
+  /* line 2215, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .headline {
+    width: 100% !important;
+    background: #0ca788;
+  }
+
+  /* line 2219, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .align-right h4, .align-left h4 {
+    font-size: 22px;
+  }
+
+  /* line 2223, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  #step-image {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    max-width: 100%;
+    height: 0px;
+    background-color: #d9dfe2;
+    position: relative;
+  }
+
+  /* line 2231, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  #step-image div {
+    display: block;
+    position: static;
+  }
+
+  /* line 2235, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .step-by-container {
+    min-width: 80%;
+    width: auto !important;
+    margin: 10px auto;
+    background: #909090;
+  }
+
+  /* line 2241, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .step-by {
+    margin-right: 2%;
+  }
+
+  /* line 2244, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .step-by h5 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1040px) {
+  /* line 2250, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .author-post {
+    padding-left: 15px;
+  }
+
+  /* line 2253, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .author-post img {
+    float: none;
+  }
+
+  /* line 2256, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .author-post p {
+    text-align: left;
+    margin: 4px 0;
+  }
+
+  /* line 2260, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .meta-author i:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 990px) {
+  /* line 2265, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .main-logo {
+    margin-bottom: 0px !important;
+  }
+
+  /* line 2268, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .headline {
+    display: none;
+  }
+
+  /* line 2271, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .recent-job-list-home .job-list-location, .recent-job-list-home .job-list-logo, .recent-job-list-home .job-list-desc {
+    border: none;
+  }
+
+  /* line 2274, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .group-1, .group-2 {
+    padding: 0 0 0 0;
+  }
+
+  /* line 2277, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .footer-widget {
+    height: auto !important;
+    min-height: 0;
+    margin-bottom: 10px;
+    clear: both;
+  }
+
+  /* line 2284, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .recent-job-detail .job-detail-desc p {
+    margin: 5px 0;
+    font-size: 13px;
+  }
+
+  /* line 2289, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .recent-job-detail .btn-apply-job, .recent-job-detail .job-detail-name, .recent-job-detail .job-detail-location, .recent-job-detail .job-detail-type {
+    text-align: left;
+    border: none;
+    min-height: 0px;
+    padding: 10px 10px;
+  }
+
+  /* line 2295, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .recent-job-detail .job-detail-name h6, .recent-job-detail .job-detail-location h6, .recent-job-detail .job-detail-type h6 {
+    font-size: 14px;
+  }
+
+  /* line 2298, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .recent-job-detail .job-detail-desc {
+    border: none;
+    min-height: 0px;
+    padding: 10px 10px;
+  }
+
+  /* line 2303, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .recent-job-list .job-list-logo, .recent-job-list .job-list-desc, .recent-job-list .job-list-location {
+    border: none;
+    min-height: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left !important;
+  }
+
+  /* line 2310, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .recent-job-list > .col-md-3 {
+    padding: 0;
+  }
+
+  /* line 2313, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .recent-job-list > .col-md-3 .job-list-button {
+    padding: 0 10px;
+  }
+
+  /* line 2316, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .recent-job-list .job-list-location h6 i, .recent-job-list .job-list-type h6 i {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  /* line 2320, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .author-post {
+    padding-left: 15px;
+  }
+
+  /* line 2323, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .author-post .meta-author i {
+    margin: 0 5px 0 9px;
+  }
+
+  /* line 2326, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .author-post {
+    max-width: 250px;
+  }
+
+  /* line 2329, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .author-post img {
+    float: none;
+  }
+
+  /* line 2332, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .author-post p {
+    text-align: left;
+    margin: 4px 0;
+  }
+
+  /* line 2336, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .meta-author i:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 800px) {
+  /* line 2341, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .container {
+    padding: 0 15px;
+  }
+
+  /* line 2344, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  div.location {
+    height: 319px;
+  }
+
+  /* line 2347, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .contact .btn-green {
+    margin: 15px 0;
+  }
+
+  /* line 2351, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .spacer-1 {
+    width: 100%;
+    height: 10px;
+  }
+
+  /* line 2355, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .spacer-2 {
+    width: 100%;
+    height: 20px;
+  }
+}
+@media (max-width: 780px) {
+  /* line 2362, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .footer-widget {
+    padding: 0 15px;
+    border: none;
+  }
+
+  /* line 2366, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .footer-widget:nth-child(2), .footer-widget:nth-child(3), .footer-widget:nth-child(4) {
+    border: none;
+  }
+
+  /* line 2369, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .footer-credits {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  /* line 2373, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .big-title {
+    font-size: 30px;
+    margin: 40px 0 15px 0;
+  }
+}
+@media (max-width: 640px) {
+  /* line 2379, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .main-logo {
+    margin-bottom: 10px !important;
+  }
+
+  /* line 2382, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .menu {
+    display: none;
+  }
+
+  /* line 2386, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .mobile-menu {
+    display: block;
+  }
+
+  /* line 2390, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  nav {
+    margin: 0;
+    background: none;
+  }
+
+  /* line 2396, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .menu li {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 2401, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .menu li:first-child {
+    padding: 0;
+  }
+
+  /* line 2405, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .menu li a {
+    background: #ffffff;
+    color: #565656;
+    border-top: 1px solid #e0e0e0;
+    border-left: none;
+    padding: 15px 20px;
+  }
+
+  /* line 2413, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .menu li a:hover, .menu li:hover > a {
+    background: #f0f0f0;
+    color: #797979;
+    border-left: none;
+    border-bottom: none;
+  }
+
+  /* line 2420, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .menu ul {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  /* line 2431, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .menu ul li a {
+    padding: 15px 35px;
+    background: #f6f6f6;
+  }
+
+  /* line 2436, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .menu ul ul {
+    left: 0;
+    padding: 0;
+  }
+
+  /* line 2440, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .slider-nav {
+    display: none;
+  }
+
+  /* line 2444, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .commentlist > .media .pull-left {
+    float: none !important;
+  }
+
+  /* line 2447, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .commentlist > .media ul {
+    padding-left: 6%;
+  }
+
+  /* line 2450, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .comment-content {
+    padding-left: 0;
+    margin: 10px 0;
+  }
+
+  /* line 2455, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .job-detail-logo {
+    float: none;
+  }
+
+  /* line 2458, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .meta-job-detail {
+    font-size: 13px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  /* line 2463, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .meta-job-detail .sline {
+    display: none;
+  }
+
+  /* line 2466, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .big-title {
+    font-size: 28px;
+    margin: 35px 0 10px 0;
+  }
+}
+@media (max-width: 480px) {
+  /* line 2472, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .tab {
+    float: none;
+    display: static;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #e3e3e3;
+    margin: 2px 0;
+  }
+
+  /* line 2480, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .tab.active {
+    background: #f6f6f6;
+    top: 0px;
+  }
+
+  /* line 2484, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .counter {
+    width: 100%;
+  }
+
+  /* line 2487, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .counter-container p {
+    font-size: 14px;
+  }
+
+  /* line 2490, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .counter-value {
+    max-width: 80px;
+    height: auto;
+    background: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 15px 0;
+  }
+
+  /* line 2499, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .step-by {
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  /* line 2503, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  div.location {
+    height: 260px;
+  }
+
+  /* line 2506, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .post-job-title, .post-resume-page-title {
+    padding: 15px 0;
+  }
+
+  /* line 2509, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .post-job-phone, .post-resume-phone {
+    padding: 17px 0;
+    text-align: left;
+    float: left;
+  }
+
+  /* line 2514, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .media-top-right {
+    float: none;
+    margin: 0 auto;
+  }
+
+  /* line 2518, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .media-top-2 {
+    float: right;
+    margin: 0;
+  }
+}
+@media (max-width: 370px) {
+  /* line 2524, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .counter-container p {
+    font-size: 12px;
+  }
+
+  /* line 2527, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .counter-value {
+    max-width: 80px;
+    height: auto;
+    background: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 12px 0;
+  }
+
+  /* line 2535, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .job-pagination li {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  /* line 2539, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .job-side-wrap .btn-green {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* line 2544, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .job-side-wrap .btn-black {
+    width: 100%;
+    padding: 15px 0px;
+    font-size: 13px;
+  }
+
+  /* line 2549, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .job-side-wrap .btn-black i {
+    display: none;
+  }
+
+  /* line 2552, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .job-side-wrap .btn-blue {
+    width: 100%;
+    padding: 15px 0px;
+  }
+
+  /* line 2556, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .job-side-wrap .btn-green.postnow {
+    width: 100%;
+    padding: 15px 0px;
+  }
+}
+@media (max-width: 380px) {
+  /* line 2562, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .media-top-2 {
+    float: none;
+    margin: 0 auto;
+  }
+
+  /* line 2566, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .media-top {
+    float: none;
+    margin: 0 auto;
+  }
+
+  /* line 2570, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .phone-cs {
+    font-size: 30px;
+  }
+}
+@media (max-width: 330px) {
+  /* line 2575, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .counter-container {
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 2579, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .counter-value {
+    max-width: 130px;
+    height: auto;
+    background: #ffffff;
+    font-weight: 700;
+    font-size: 36px;
+    padding: 36px 0;
+  }
+
+  /* line 2588, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .counter-container p {
+    font-size: 14px;
+  }
+
+  /* line 2591, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .meta-job-type {
+    background-color: #f0f0f0 !important;
+  }
+
+  /* line 2594, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  #cs h1 {
+    font-size: 30px;
+  }
+
+  /* line 2597, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .phone-cs {
+    font-size: 28px;
+    color: #343434 !important;
+    margin: 30px 0 !important;
+  }
+}
+@media (max-width: 300px) {
+  /* line 2606, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  #cs h1 {
+    font-size: 24px;
+  }
+
+  /* line 2609, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .phone-cs {
+    font-size: 20px;
+    color: #343434 !important;
+    margin: 20px 0 !important;
+  }
+
+  /* line 2614, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .big-title {
+    font-size: 26px;
+    margin: 25px 0 10px 0;
+  }
+}
+@media (max-width: 250px) {
+  /* line 2620, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .about-post-resume .btn-black, .about-post-job .btn-green {
+    margin: 25px 0 10px 0;
+    padding: 10px 15px;
+  }
+
+  /* line 2624, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+  .about-post-resume .btn-black i {
+    display: none;
+  }
+}
+/* Pure CSS */
+/* line 2633, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.code {
+  padding: 1em;
+  margin: 10px 0;
+  border: 1px solid #eee;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #fafafa;
+}
+
+/* line 2634, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.red {
+  color: #F00;
+}
+
+/* line 2636, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #cbcbcb;
+}
+
+/* line 2636, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table caption {
+  color: #000;
+  font: italic 85%/1 arial,sans-serif;
+  padding: 1em 0;
+  text-align: center;
+}
+
+/* line 2636, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table th {
+  font-size: 12px !important;
+}
+
+/* line 2636, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table td, .pure-table th {
+  border-left: 1px solid #cbcbcb;
+  border-width: 0 0 0 1px;
+  font-size: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 3px 12px;
+  vertical-align: middle !important;
+}
+
+/* line 2636, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table td:first-child, .pure-table th:first-child {
+  border-left-width: 0;
+}
+
+/* line 2636, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table thead {
+  background: #c0c0c0;
+  color: #000000;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+/* line 2636, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table td {
+  background-color: transparent;
+  font-size: 13px;
+}
+
+/* line 2636, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table-odd td {
+  background-color: #f2f2f2;
+}
+
+/* line 2636, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table-striped tr:nth-child(2n-1) td {
+  background-color: #f2f2f2;
+}
+
+/* line 2636, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table-bordered td {
+  border-bottom: 1px solid #cbcbcb;
+}
+
+/* line 2636, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table-bordered tbody > tr:last-child td, .pure-table-horizontal tbody > tr:last-child td {
+  border-bottom-width: 0;
+}
+
+/* line 2636, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table-horizontal td, .pure-table-horizontal th {
+  border-width: 0 0 1px;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+/* line 2636, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table-horizontal tbody > tr:last-child td {
+  border-bottom-width: 0;
+}
+
+/* line 2638, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table td {
+  padding: 6px 12px !important;
+  vertical-align: middle !important;
+}
+
+/* line 2639, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table td:nth-child(1), .pure-table td:nth-child(3), .pure-table td:nth-child(5) {
+  background: #F9F9F9;
+}
+
+/* line 2640, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table td:nth-child(1) {
+  font-size: 16px;
+}
+
+/* line 2641, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table td a {
+  color: #1d52b7;
+  text-decoration: none;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form input[type=text], .pure-form input[type=password], .pure-form input[type=email], .pure-form input[type=url], .pure-form input[type=date], .pure-form input[type=month], .pure-form input[type=time], .pure-form input[type=datetime], .pure-form input[type=datetime-local], .pure-form input[type=week], .pure-form input[type=number], .pure-form input[type=search], .pure-form input[type=tel], .pure-form input[type=color], .pure-form select, .pure-form textarea {
+  padding: .5em .6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form input:not([type]) {
+  padding: .5em .6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form input[type=color] {
+  padding: .2em .5em;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form input[type=text]:focus, .pure-form input[type=password]:focus, .pure-form input[type=email]:focus, .pure-form input[type=url]:focus, .pure-form input[type=date]:focus, .pure-form input[type=month]:focus, .pure-form input[type=time]:focus, .pure-form input[type=datetime]:focus, .pure-form input[type=datetime-local]:focus, .pure-form input[type=week]:focus, .pure-form input[type=number]:focus, .pure-form input[type=search]:focus, .pure-form input[type=tel]:focus, .pure-form input[type=color]:focus, .pure-form select:focus, .pure-form textarea:focus {
+  outline: 0;
+  outline: thin dotted \9;
+  border-color: #129FEA;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form input:not([type]):focus {
+  outline: 0;
+  outline: thin dotted \9;
+  border-color: #129FEA;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form input[type=file]:focus, .pure-form input[type=radio]:focus, .pure-form input[type=checkbox]:focus {
+  outline: thin dotted #333;
+  outline: 1px auto #129FEA;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form .pure-checkbox, .pure-form .pure-radio {
+  margin: .5em 0;
+  display: block;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form input[type=text][disabled], .pure-form input[type=password][disabled], .pure-form input[type=email][disabled], .pure-form input[type=url][disabled], .pure-form input[type=date][disabled], .pure-form input[type=month][disabled], .pure-form input[type=time][disabled], .pure-form input[type=datetime][disabled], .pure-form input[type=datetime-local][disabled], .pure-form input[type=week][disabled], .pure-form input[type=number][disabled], .pure-form input[type=search][disabled], .pure-form input[type=tel][disabled], .pure-form input[type=color][disabled], .pure-form select[disabled], .pure-form textarea[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form input:not([type])[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form input[readonly], .pure-form select[readonly], .pure-form textarea[readonly] {
+  background: #eee;
+  color: #777;
+  border-color: #ccc;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form input:focus:invalid, .pure-form textarea:focus:invalid, .pure-form select:focus:invalid {
+  color: #b94a48;
+  border-color: #ee5f5b;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form input:focus:invalid:focus, .pure-form textarea:focus:invalid:focus, .pure-form select:focus:invalid:focus {
+  border-color: #e9322d;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form input[type=file]:focus:invalid:focus, .pure-form input[type=radio]:focus:invalid:focus, .pure-form input[type=checkbox]:focus:invalid:focus {
+  outline-color: #e9322d;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form select {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form select[multiple] {
+  height: auto;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form label {
+  margin: .5em 0 .2em;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form fieldset {
+  margin: 0;
+  padding: .35em 0 .75em;
+  border: 0;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form legend {
+  display: block;
+  width: 100%;
+  padding: .3em 0;
+  margin-bottom: .3em;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form-stacked input[type=text], .pure-form-stacked input[type=password], .pure-form-stacked input[type=email], .pure-form-stacked input[type=url], .pure-form-stacked input[type=date], .pure-form-stacked input[type=month], .pure-form-stacked input[type=time], .pure-form-stacked input[type=datetime], .pure-form-stacked input[type=datetime-local], .pure-form-stacked input[type=week], .pure-form-stacked input[type=number], .pure-form-stacked input[type=search], .pure-form-stacked input[type=tel], .pure-form-stacked input[type=color], .pure-form-stacked select, .pure-form-stacked label, .pure-form-stacked textarea {
+  display: block;
+  margin: .25em 0;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form-stacked input:not([type]) {
+  display: block;
+  margin: .25em 0;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form-aligned input, .pure-form-aligned textarea, .pure-form-aligned select, .pure-form-aligned .pure-help-inline, .pure-form-message-inline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form-aligned textarea {
+  vertical-align: top;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form-aligned .pure-control-group {
+  margin-bottom: .5em;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form-aligned .pure-control-group label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10em;
+  margin: 0 1em 0 0;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form-aligned .pure-controls {
+  margin: 1.5em 0 0 10em;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form input.pure-input-rounded, .pure-form .pure-input-rounded {
+  border-radius: 2em;
+  padding: .5em 1em;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form .pure-group fieldset {
+  margin-bottom: 10px;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form .pure-group input {
+  display: block;
+  padding: 10px;
+  margin: 0;
+  border-radius: 0;
+  position: relative;
+  top: -1px;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form .pure-group input:focus {
+  z-index: 2;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form .pure-group input:first-child {
+  top: 1px;
+  border-radius: 4px 4px 0 0;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form .pure-group input:last-child {
+  top: -2px;
+  border-radius: 0 0 4px 4px;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form .pure-group button {
+  margin: .35em 0;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form .pure-input-1 {
+  width: 100%;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form .pure-input-2-3 {
+  width: 66%;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form .pure-input-1-2 {
+  width: 50%;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form .pure-input-1-3 {
+  width: 33%;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form .pure-input-1-4 {
+  width: 25%;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form .pure-help-inline, .pure-form-message-inline {
+  display: inline-block;
+  padding-left: .3em;
+  color: #666;
+  vertical-align: middle;
+  font-size: .875em;
+}
+
+/* line 2643, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-form-message {
+  display: block;
+  color: #666;
+  font-size: .875em;
+}
+
+/* line 2645, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-button {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: baseline;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 2645, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 2645, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-button {
+  font-family: inherit;
+  font-size: 100%;
+  *font-size: 90%;
+  *overflow: visible;
+  padding: .5em 1em;
+  color: #444;
+  color: rgba(0, 0, 0, 0.8);
+  *color: #444;
+  border: 1px solid #999;
+  border: 0 transparent;
+  background-color: #E6E6E6;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+/* line 2645, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-button-hover, .pure-button:hover, .pure-button:focus {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0, rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+}
+
+/* line 2645, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-button:focus {
+  outline: 0;
+}
+
+/* line 2645, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-button-active, .pure-button:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* line 2645, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-button[disabled], .pure-button-disabled, .pure-button-disabled:hover, .pure-button-disabled:focus, .pure-button-disabled:active {
+  border: 0;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  filter: alpha(opacity=40);
+  -khtml-opacity: .4;
+  -moz-opacity: .4;
+  opacity: .4;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* line 2645, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-button-hidden {
+  display: none;
+}
+
+/* line 2645, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 2645, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {
+  background-color: #0078e7;
+  color: #fff;
+}
+
+/* line 2647, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 2651, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.button-success {
+  background: #1cb841;
+  /* this is a green */
+}
+
+/* line 2652, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.button-error {
+  background: #ca3c3c;
+  /* this is a maroon */
+}
+
+/* line 2653, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.button-warning {
+  background: #df7514;
+  /* this is an orange */
+}
+
+/* line 2654, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.button-secondary {
+  background: #42b8dd;
+  /* this is a light blue */
+}
+
+/* line 2656, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table a {
+  color: #4384d6 !important;
+}
+
+/* line 2657, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.pure-table a:hover {
+  color: #be2929 !important;
+  text-decoration: none;
+}
+
+/* line 2659, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.sharethis {
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 40px 15px 15px;
+  border-color: #eee;
+  border-style: solid;
+  border-width: 1px 0;
+  margin-right: 0;
+  margin-left: 0;
+  background-color: #fff;
+  border-width: 1px;
+}
+
+/* line 2674, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.sharethis:after {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  content: "Share This Job On";
+}
+
+/* line 2686, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.ext-courses-box {
+  width: 100%;
+}
+
+/* line 2690, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.ext-courses-header {
+  padding: 10px;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  background: #ed1d24;
+  border-bottom: 0.25em solid #c4181e;
+}
+
+/* line 2696, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.ext-courses-header > h2 {
+  line-height: 25px;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.15);
+}
+
+/* line 2704, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.ext-courses {
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+
+/* line 2707, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.ext-courses > h3 {
+  line-height: 25px;
+  font-size: 11px;
+  color: #888;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.05));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.05));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.05));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.05));
+}
+
+/* line 2719, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.ext-courses a.label {
+  padding: 10px;
+  display: block;
+  color: #505050;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  background: #eaefef;
+  border-bottom: 0.25em solid #D8D8D8;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* line 2731, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.ext-courses a:hover.label {
+  color: white;
+  background: #20aae5;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.15);
+  background: #20aae5;
+  border-bottom: 0.25em solid #1894ca;
+}
+
+/* line 2739, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+.ext-courses a:active.label {
+  position: relative;
+  top: 1px;
+  border-bottom: 0.2em solid #1894ca;
+  margin-bottom: 9.15px;
+}
+
+/* line 2747, /home/ubuntu/letstry1/app/assets/stylesheets/style.scss */
+blink {
+  animation-duration: 1000ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
